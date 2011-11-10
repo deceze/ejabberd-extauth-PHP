@@ -34,7 +34,7 @@ methods. Then create a new instance to start it. Example:
 
 Then just configure your ejabberd correctly to point to the script for external authentication.
 
-The child class only needs to worrying about implementing the actual authentication handling methods, which should return `true` or `false`. These methods are:
+The child class only needs to worry about implementing the actual authentication handling methods, which should return `true` or `false`. These methods are:
 
 - `bool authenticate( string $user, string $server, string $password )`
 
