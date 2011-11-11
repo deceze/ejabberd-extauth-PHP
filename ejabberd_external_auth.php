@@ -174,7 +174,7 @@ abstract class EjabberdExternalAuth {
     }
     
     final protected function errorHandler($errno, $errstr, $errfile, $errline, array $errcontext) {
-        $this->log("$errstr in $errfile on line $errline", $errno);
+        $this->log("($errno) $errstr in $errfile on line $errline");
         return false;
     }
 

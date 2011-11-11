@@ -13,7 +13,7 @@ Usage
 Simply extend the `EjabberdExternalAuth` class and implement the authentication handler
 methods. Then create a new instance to start it. Example:
 
-    require `ejabberd_external_auth.php`;
+    require 'ejabberd_external_auth.php';
 
     class MyAuth extends EjabberdExternalAuth {
 
