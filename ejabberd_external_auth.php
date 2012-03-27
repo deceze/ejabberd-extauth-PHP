@@ -138,7 +138,7 @@ abstract class EjabberdExternalAuth {
     }
 
     final private function parseMessage($message) {
-        $message = explode(':', $message);
+        $message = explode(':', $message, 4);
         if (count($message) < 3) {
             throw new UnexpectedValueException('Message is too short: ' . join(':', $message));
         }
