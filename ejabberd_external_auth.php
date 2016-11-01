@@ -122,7 +122,7 @@ abstract class EjabberdExternalAuth {
     }
 
     final private function read() {
-        $length = fgets($this->stdin, 3);
+        $length = stream_get_line($this->stdin, 65535);
 
         if (feof($this->stdin)) {
             throw new RuntimeException('Pipe broken');
